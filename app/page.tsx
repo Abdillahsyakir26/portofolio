@@ -11,15 +11,19 @@ export default function Home() {
   const portfolios = [
     {
       title: "Web",
-      desc: "Website company profile, landing page, dan sistem informasi modern.",
+      desc: "Website Company profile, Personal website, artikel langsung japri saja.",
+      image: "website.png",
     },
     {
       title: "Aplikasi Akuntansi",
-      desc: "Aplikasi pencatatan transaksi dan laporan keuangan berbasis desktop.",
+      desc: "Aplikasi Keuangan Perusahaan maupun UMKM, saat ini sudah membantu 5 Bisnis UMKM untuk Grow.",
+      image: "akuntansi.png",
     },
     {
-      title: "Website Akuntansi",
-      desc: "Sistem laporan keuangan dan arus kas berbasis website.",
+      title: "ERP Perusahaan",
+      desc: "Sistem Lengkap ERP perusahaan dengan batasan akses masing masing per-bagian kerja.",
+      image: "ERP.png",
+
     },
   ];
 
@@ -115,7 +119,7 @@ export default function Home() {
 
                     <div>
                       <h3 className="text-2xl font-bold">{skill}</h3>
-                      
+
                     </div>
                   </div>
                 </div>
@@ -144,7 +148,12 @@ export default function Home() {
               className="group bg-white/5 border border-white/10 rounded-3xl overflow-hidden hover:-translate-y-3 transition duration-300"
             >
               <div className="h-52 bg-gradient-to-br from-purple-500/20 to-cyan-400/20 flex items-center justify-center text-5xl font-black">
-                <img src="website.png" alt="" />
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  
+                  className="w-full h-full object-cover"
+                />
               </div>
 
               <div className="p-6">

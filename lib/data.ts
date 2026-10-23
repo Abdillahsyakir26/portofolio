@@ -55,6 +55,7 @@ export type Project = {
   title: string;
   desc: string;
   tech: string[];
+  link?: string; // tambahkan baris ini
 };
 
 export type Category = {
@@ -110,12 +111,12 @@ export const categories: Category[] = [
   {
     id: "erp",
     title: "ERP Perusahaan",
-    desc: "Sistem ERP lengkap dengan pembatasan akses per bagian kerja.",
+    desc: "sistem perangkat lunak terintegrasi yang digunakan organisasi untuk mengotomatisasi dan mengelola berbagai proses bisnis inti dalam satu platform terpusat. ",
     image: "/ERP.png",
     projects: [
       {
         title: "Sistem ERP Terpadu",
-        desc: "Sistem ERP lengkap yang menyatukan proses perusahaan dalam satu aplikasi.",
+        desc: "Sistem ERP lengkap yang menyatukan proses bisnis dalam satu aplikasi yang terinegrasi.",
         tech: ["PHP", "JavaScript", "MySQL"],
       },
       {
@@ -125,11 +126,21 @@ export const categories: Category[] = [
       },
     ],
   },
+  
 ];
+
+export const store = {
+  title: "Produk Sandang",
+  desc: "Toko sandang berkualitas, dikelola langsung dengan sepenuh hati.",
+  image: "/image.png",
+  link: "https://shopee.co.id/sandangandalan", // ganti dengan link tokomu
+  button: "Kunjungi Toko Shopee",
+};
 
 export const navLinks = [
   { label: "Tentang", href: "#home" },
   { label: "Skill", href: "#skill" },
   { label: "Portofolio", href: "#portofolio" },
+  { label: "Toko", href: "#toko" },
   { label: "Kontak", href: "#kontak" },
 ];

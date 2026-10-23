@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import Skills from "../components/Skills";
 import Portfolio from "../components/Portfolio";
+import Store from "../components/Store"; // tambah
 import Contact from "../components/Contact";
 import { profile } from "../lib/data";
 
@@ -12,6 +13,7 @@ export default function Home() {
       <Hero />
       <Skills />
       <Portfolio />
+      <Store /> {/* tambah */}
       <Contact />
 
       <footer className="border-t border-white/10 py-10 text-center text-gray-500">
